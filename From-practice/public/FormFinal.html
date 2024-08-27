@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Styled Form Demo</title>
-    <link rel="stylesheet" href="../public/styles3.2.css" />
+    <title>PHP Comprehensive Form Example</title>
+    <link rel="stylesheet" href="../public/stylesFinal.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Form Demo</h1>
-      <form action="../controller/process.php" method="post">
+      <h1>Comprehensive Form with All Elements</h1>
+      <!-- Combined Form -->
+      <form action="../controller/processFinal.php" method="post">
+        <h2>Complete Form</h2>
+
         <!-- Text Input -->
         <div class="form-group">
           <label for="username">Username:</label>
@@ -18,6 +21,7 @@
             id="username"
             name="username"
             placeholder="Enter your username"
+            required
           />
         </div>
 
@@ -29,6 +33,7 @@
             id="password"
             name="password"
             placeholder="Enter your password"
+            required
           />
         </div>
 
@@ -40,6 +45,7 @@
             id="email"
             name="email"
             placeholder="Enter your email"
+            required
           />
         </div>
 
@@ -71,14 +77,14 @@
         <!-- Radio Buttons -->
         <div class="form-group">
           <label>Gender:</label>
-          <label>
-            <input type="radio" name="gender" value="male" />
-            Male
-          </label>
-          <label>
-            <input type="radio" name="gender" value="female" />
-            Female
-          </label>
+          <div class="inline-elements">
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </div>
         </div>
 
         <!-- Select Dropdown -->
@@ -148,14 +154,12 @@
         </div>
 
         <!-- Submit Button -->
-        <!-- Button -->
         <div class="form-group">
           <button type="button">Click Me</button>
+          <input type="submit" value="Submit Form" />
         </div>
 
-        <div class="form-group">
-          <input type="submit" value="Submit" />
-        </div>
+        <input type="hidden" name="form_method" value="comprehensive" />
       </form>
     </div>
   </body>
