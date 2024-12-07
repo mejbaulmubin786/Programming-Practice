@@ -16,4 +16,18 @@ console.log(fib(6));
 console.log(fib(7));
 console.log(fib(8));
 
-console.log(fib(55));
+console.log("-------------------");
+const arr = [
+  { id: 1, value: 10 },
+  { id: 2, value: 20 },
+  { id: 3, value: 30 },
+  { id: 4, value: 40 },
+  { id: 5, value: 50 },
+];
+
+const obj = arr.find((val) => val.id === 4);
+
+obj.value = 400;
+console.log(obj); // { id: 4, value: 400 }
+console.log("-------------------");
+console.log(arr);
