@@ -225,3 +225,56 @@ let person2 = {
 for (let property in person2) {
   document.write(`${property}: ${person2[property]}<br>`);
 }
+
+//21 Array Concate And Array Form
+document.write(
+  "<br>" + "<br>" + "<strong>21 Array Concate And Array Form</strong>" + "<br>"
+);
+
+let arr1 = ["A", "B", "C"];
+let arr2 = ["D", "E", "F"];
+
+let arr3 = arr1.concat(arr2);
+
+document.write(arr3 + "<br>");
+
+let arr = Array.from("Mejbaul Mubin");
+document.write(arr);
+
+//22 Array Filter
+document.write("<br>" + "<br>" + "<strong>22 Array Filter</strong>" + "<br>");
+
+let num = [30, 12, 44, 50, 16, 40, 70, 15, 20, 35];
+
+let result = num.filter(function (item) {
+  return item > 30;
+});
+
+document.write(result);
+
+//23 Array Find Find Index
+document.write(
+  "<br>" + "<br>" + "<strong>23 Array Find Find Index</strong>" + "<br>"
+);
+
+let resultFind = num.find(function (item) {
+  return item > 30;
+});
+
+document.write(resultFind);
+document.write("<br>");
+
+let resultFindIndex = num.findIndex(function (item) {
+  return item > 30;
+});
+
+document.write(resultFindIndex);
+document.write("<br>");
+//24 Array ForEach Method
+document.write(
+  "<br>" + "<br>" + "<strong>24 Array ForEach Method</strong>" + "<br>"
+);
+
+num.forEach(function (item) {
+  document.write(item + "<br>");
+});
