@@ -13,7 +13,7 @@ var x = "Mejbaul Mubin";
 document.write(x + "<br>");
 
 // 7. if Else Statement
-document.write("<br>" + "<br>" + "if Else Statement" + "<br>");
+document.write("<br>" + "<br>" + "<strong>if Else Statement</strong>" + "<br>");
 var age = 20;
 var city = "Noakhali";
 if (age > 30 && city == "Noakhali") {
@@ -25,7 +25,7 @@ if (age > 30 && city == "Noakhali") {
 }
 
 // 8. Switch Case
-document.write("<br>" + "<br>" + "Switch Case" + "<br>");
+document.write("<br>" + "<br>" + "<strong>Switch Case</strong>" + "<br>");
 switch (true) {
   case age > 30 && city == "Noakhali":
     document.write("I hope you are married" + "<br>");
@@ -84,8 +84,8 @@ switch (day) {
     document.write("Weekend");
 }
 
-// 9. Basic for loop
-document.write("<br>" + "<br>" + "9. Basic For loop" + "<br>");
+// 9. Basic for loop & 10. Loop break continue
+document.write("<br>" + "<br>" + "<strong>9. Basic For loop</strong>" + "<br>");
 
 for (let i = 0; i < 10; i++) {
   if (i % 3 == 0) {
@@ -101,8 +101,8 @@ for (let i = 0; i < 10; i++) {
   document.write(i + "<button>New Submit</button>" + "<br>");
 }
 
-// 10. While loop
-document.write("<br>" + "<br>" + "9. While Loop" + "<br>");
+// 11. While loop
+document.write("<br>" + "<br>" + "<strong>11. While Loop</strong>" + "<br>");
 
 let i = 0;
 while (i < 10) {
@@ -123,4 +123,105 @@ while (j < 10) {
   }
   document.write(j + "<button>New Submit</button>" + "<br>");
   j++;
+}
+
+//12. Do while loop
+document.write("<br>" + "<br>" + "<strong>12. Do While Loop</strong>" + "<br>");
+
+let m = 0;
+do {
+  document.write(m + " " + "Roll Disk" + "<br>");
+  m = Math.floor(Math.random() * 7);
+} while (m != 6);
+
+//13 JavaScript function
+document.write(
+  "<br>" + "<br>" + "<strong>13, 14, 15 JavaScript function</strong>" + "<br>"
+);
+
+function addTwoNumber() {
+  var num1 = 20;
+  var num2 = 30;
+  var num3 = num1 + num2;
+  document.write("The sum of two number " + num3);
+}
+
+addTwoNumber();
+document.write("<br>");
+function addTwoNumber1(num1, num2) {
+  var num3 = num1 + num2;
+  document.write("The sum of two number " + num3);
+}
+
+addTwoNumber1(5, 10);
+
+document.write("<br>");
+function addTwoNumber2(num1, num2) {
+  var num3 = num1 + num2;
+  return "The sum of two number " + num3;
+}
+
+document.write(addTwoNumber2(51, 10));
+//16 JavaScript function
+document.write(
+  "<br>" + "<br>" + "<strong>16 JavaScript Object</strong>" + "<br>"
+);
+
+let person = {
+  name: "Mejbaul Mubin",
+  age: "35",
+  height: 5.8,
+  profetion: "job",
+};
+
+document.write(person["name"] + "<br>");
+//or
+document.write(person.name);
+
+//17 JavaScript Array
+document.write(
+  "<br>" + "<br>" + "<strong>17 JavaScript Array</strong>" + "<br>"
+);
+
+let category = [
+  "Allium",
+  "Beverages",
+  "Dairy Bread",
+  "Eggs",
+  "Fruits",
+  "Grocery",
+  "Staples",
+];
+
+document.write(category[3] + "<br>");
+document.write(category);
+document.write("<br>" + "<br>");
+for (let i = 0; i < category.length; i++) {
+  document.write(category[i] + "<br>");
+}
+
+//19 For In Loop Over Array
+document.write(
+  "<br>" + "<br>" + "<strong>19 For In Loop Over Array</strong>" + "<br>"
+);
+
+for (let item in category) {
+  document.write(category[item] + "<br>");
+}
+
+//20 For In Loop Over Object
+document.write(
+  "<br>" + "<br>" + "<strong>20 For In Loop Over Object</strong>" + "<br>"
+);
+
+let person2 = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 30,
+  city: "New York",
+};
+
+// Using a for in loop to iterate over the object
+for (let property in person2) {
+  document.write(`${property}: ${person2[property]}<br>`);
 }
