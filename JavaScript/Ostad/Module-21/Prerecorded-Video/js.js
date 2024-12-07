@@ -278,3 +278,8 @@ document.write(
 num.forEach(function (item) {
   document.write(item + "<br>");
 });
+
+//25 Array Includes And IndexOf
+document.write(
+  "<br>" + "<br>" + "<strong>25 Array Includes And IndexOf</strong>" + "<br>"
+);
