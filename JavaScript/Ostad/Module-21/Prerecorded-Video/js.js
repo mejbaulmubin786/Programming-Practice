@@ -226,9 +226,9 @@ for (let property in person2) {
   document.write(`${property}: ${person2[property]}<br>`);
 }
 
-//21 Array Concate And Array Form
+//-----------------------------------------------------------------------21 Array Concat And Array Form
 document.write(
-  "<br>" + "<br>" + "<strong>21 Array Concate And Array Form</strong>" + "<br>"
+  "<br>" + "<br>" + "<strong>21 Array Concat And Array Form</strong>" + "<br>"
 );
 
 let arr1 = ["A", "B", "C"];
@@ -312,12 +312,12 @@ var result4 = num.sort();
 document.write(num + "<br>");
 var result4 = num.sort().reverse();
 document.write(num + "<br>");
-document.write("----------------" + "<br>");
 var result5 = num.slice(11, 13); // 11 নং টু 13 নং
 
 document.write(num + "<br>");
 document.write(result5 + "<br>");
-document.write("----------------" + "<br>");
+//-----------------------------------------------------------------------------------------28 Array splice
+document.write("<br>" + "<br>" + "<strong>28 Array splice</strong>" + "<br>");
 num.splice(1, 2); // index 1 to 2 element;
 document.write(num + "<br>");
 document.write("----------------" + "<br>");
@@ -325,3 +325,13 @@ num.splice(0, 0, 50); // add 50 as a first element
 document.write(num + "<br>");
 num.splice(1, 0, 70); // add 70 in index 1
 document.write(num + "<br>");
+//-----------------------------------------------------------------------------------------29 String Methods
+document.write("<br>" + "<br>" + "<strong>29 String Methods</strong>" + "<br>");
+var country = "Bangladesh ";
+document.write(country.charAt(5) + "<br>");
+var district = "Noakhali";
+document.write(country.concat(district) + "<br>");
+document.write(country.indexOf("a") + "<br>"); //if given character is not exist in the string return -1; and it
+document.write(country.lastIndexOf("a") + "<br>");
+//-----------------------------------------------------------------------------------------30 String Methods
+document.write("<br>" + "<br>" + "<strong>30 String Methods</strong>" + "<br>");
