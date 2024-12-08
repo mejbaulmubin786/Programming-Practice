@@ -241,7 +241,7 @@ document.write(arr3 + "<br>");
 let arr = Array.from("Mejbaul Mubin");
 document.write(arr);
 
-//22 Array Filter
+//--------------------------------------------------------------------------------------22 Array Filter
 document.write("<br>" + "<br>" + "<strong>22 Array Filter</strong>" + "<br>");
 
 let num = [30, 12, 44, 50, 16, 40, 70, 15, 20, 35];
@@ -270,7 +270,7 @@ let resultFindIndex = num.findIndex(function (item) {
 
 document.write(resultFindIndex);
 document.write("<br>");
-//24 Array ForEach Method
+//------------------------------------------------------------------------------------24 Array ForEach Method
 document.write(
   "<br>" + "<br>" + "<strong>24 Array ForEach Method</strong>" + "<br>"
 );
@@ -279,7 +279,30 @@ num.forEach(function (item) {
   document.write(item + "<br>");
 });
 
-//25 Array Includes And IndexOf
+//-------------------------------------------------------------------------------25 Array Includes And IndexOf
 document.write(
   "<br>" + "<br>" + "<strong>25 Array Includes And IndexOf</strong>" + "<br>"
+);
+
+var result2 = num.includes(20);
+
+document.write(result2 + "<br>"); // output: true
+let result3 = num.indexOf(20);
+document.write(result3 + "<br>"); // output: if true output index number or output -1
+
+//----------------------------------------------------------------------------------26 Array Pop Push Reverse
+document.write(
+  "<br>" + "<br>" + "<strong>26 Array Pop Push Reverse</strong>" + "<br>"
+);
+num.reverse();
+document.write(num + "<br>");
+num.push(22); // ‍after adding new element it returen length.
+document.write(num + "<br>");
+num.push(85);
+document.write(num + "<br>");
+num.pop();
+document.write(num + "<br>");
+//------------------------------------------------------------------------------------27 Array Slice And Sort
+document.write(
+  "<br>" + "<br>" + "<strong>27 Array Slice And Sort</strong>" + "<br>"
 );

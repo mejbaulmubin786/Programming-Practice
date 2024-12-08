@@ -62,3 +62,22 @@ if ((a < b || a == b) && (a < c || a == c)) {
 }
 
 console.log(min);
+
+var Day = "Fryday";
+
+switch (Day) {
+  case "Sunday":
+  case "Monday":
+  case "Tuesday":
+  case "Wednesday":
+  case "Thursday":
+    console.log("Working day");
+    break;
+  case "Fryday":
+  case "Saturday":
+    console.log("Weekend");
+    break;
+  default:
+    console.log("Not a Day");
+}
+// --------------------------------------------------------------------------------------------Page-59
