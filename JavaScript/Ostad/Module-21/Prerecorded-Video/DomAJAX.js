@@ -11,3 +11,12 @@ MyElements[0].innerHTML = "Eid Mobarak";
 var MyPageElements = document.getElementsByName("MyName");
 MyPageElements[2].innerHTML = "Use By Name";
 //---------------------------------------------------------------------------------------42 HTML DOM Document
+function Demo() {
+  var info = document.cookie;
+  document.getElementsByTagName("p")[2].innerHTML = info;
+}
+
+function Demo2() {
+  var info = document.domain;
+  document.getElementsByTagName("p")[1].innerHTML = info;
+}
