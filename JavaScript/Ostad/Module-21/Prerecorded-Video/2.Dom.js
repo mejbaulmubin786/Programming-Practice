@@ -20,3 +20,13 @@ function Demo2() {
   var info = document.domain;
   document.getElementsByTagName("p")[1].innerHTML = info;
 }
+
+function Demo3() {
+  document.open("text/html", "replace");
+  document.write("<h2>Mejbaul Mubin</h2>");
+  document.close();
+}
+//---------------------------------------------------------------------------------------43 HTML DOM Document
+document.write(
+  "<br>" + "<br>" + "<strong>43 HTML DOM Document</strong>" + "<br>"
+);
