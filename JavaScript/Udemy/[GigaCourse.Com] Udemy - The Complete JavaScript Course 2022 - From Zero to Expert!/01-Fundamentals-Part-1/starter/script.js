@@ -1,15 +1,17 @@
-/*
-////////////////////////////////////
+//-----------------------------------------------------------------------004 Linking a JavaScript File
+
 // Linking a JavaScript File
 let js = "amazing";
+if ((js = "amazing")) alert("JavaScript is FUN!");
+40 + 8 + 23 - 10; // nothing
 console.log(40 + 8 + 23 - 10);
 
 ////////////////////////////////////
 // Values and Variables
-console.log("Jonas");
+console.log("Mejbaul Mubin");
 console.log(23);
 
-let firstName = "Matilda";
+let firstName = "Mejbaul";
 
 console.log(firstName);
 console.log(firstName);
@@ -19,20 +21,28 @@ console.log(firstName);
 let jonas_matilda = "JM";
 let $function = 27;
 
-let person = "jonas";
+let person = "Rubel";
 let PI = 3.1415;
 
-let myFirstJob = "Coder";
-let myCurrentJob = "Teacher";
+let myFirstJob = "PHP Laravel Developer";
+let myCurrentJob = "Software Engineer";
 
-let job1 = "programmer";
-let job2 = "teacher";
+let job1 = "PHP Laravel Developer";
+let job2 = "Software Engineer";
 
 console.log(myFirstJob);
 
 ////////////////////////////////////
 // Data Types
-let javascriptIsFun = true;
+// in JavaScript every value is either an object or a primitive value.
+//But for now Let's focus on primitive data types.
+
+let height = 5.8; //number type
+
+let name = "Mejbaul Mubin"; // String
+
+let javascriptIsFun = true; // boolean
+
 console.log(javascriptIsFun);
 
 // console.log(typeof true);
@@ -40,7 +50,7 @@ console.log(typeof javascriptIsFun);
 // console.log(typeof 23);
 // console.log(typeof 'Jonas');
 
-javascriptIsFun = 'YES!';
+javascriptIsFun = "YES!";
 console.log(typeof javascriptIsFun);
 
 let year;
@@ -61,12 +71,12 @@ const birthYear = 1991;
 // birthYear = 1990;
 // const job;
 
-var job = 'programmer';
-job = 'teacher'
+var job = "programmer";
+job = "teacher";
 
-lastName = 'Schmedtmann';
+lastName = "Schmedtmann";
 console.log(lastName);
-
+/*
 ////////////////////////////////////
 // Basic Operators
 // Math operators
@@ -78,9 +88,9 @@ console.log(ageJonas, ageSarah);
 console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 // 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
 
-const firstName = 'Jonas';
-const lastName = 'Schmedtmann';
-console.log(firstName + ' ' + lastName);
+const firstName = "Jonas";
+const lastName = "Schmedtmann";
+console.log(firstName + " " + lastName);
 
 // Assignment operators
 let x = 10 + 5; // 15
@@ -113,7 +123,6 @@ console.log(x, y);
 
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
-*/
 
 ////////////////////////////////////
 // Coding Challenge #1
