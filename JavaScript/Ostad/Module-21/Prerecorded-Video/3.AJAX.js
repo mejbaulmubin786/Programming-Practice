@@ -9,3 +9,7 @@ document.write(
 //Axios package
 //JQuery Ajax
 //Superagent
+//--------------------------------------------------------------------------------50 Ajax Practice Introduction
+document.write(
+  "<br>" + "<br>" + "<strong>50 Ajax Practice Introduction</strong>" + "<br>"
+);
