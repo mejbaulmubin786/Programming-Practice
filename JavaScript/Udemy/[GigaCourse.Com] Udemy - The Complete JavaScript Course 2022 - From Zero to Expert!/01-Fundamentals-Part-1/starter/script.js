@@ -76,7 +76,7 @@ job = "teacher";
 
 lastName = "Schmedtmann";
 console.log(lastName);
-/*
+
 ////////////////////////////////////
 // Basic Operators
 // Math operators
