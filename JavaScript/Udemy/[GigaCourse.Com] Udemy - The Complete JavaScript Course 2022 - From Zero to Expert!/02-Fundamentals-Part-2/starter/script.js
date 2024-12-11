@@ -250,10 +250,9 @@ HINT: Remember that an array needs a value in each position, and that value can 
 GOOD LUCK 😀
 */
 
-/*
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
+};
 // const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
 const bills = [125, 555, 44];
@@ -262,72 +261,75 @@ const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, totals);
 
-
 ///////////////////////////////////////
 // Introduction to Objects
 const jonasArray = [
-  'Jonas',
-  'Schmedtmann',
+  "Jonas",
+  "Schmedtmann",
   2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven']
+  "teacher",
+  ["Michael", "Peter", "Steven"],
 ];
 
 const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
   age: 2037 - 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven']
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
 };
-
 
 ///////////////////////////////////////
 // Dot vs. Bracket Notation
 const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
   age: 2037 - 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven']
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
 };
 console.log(jonas);
 
 console.log(jonas.lastName);
-console.log(jonas['lastName']);
+console.log(jonas["lastName"]);
 
-const nameKey = 'Name';
-console.log(jonas['first' + nameKey]);
-console.log(jonas['last' + nameKey]);
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
 
 // console.log(jonas.'last' + nameKey)
 
-const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends');
+const interestedIn = prompt(
+  "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends"
+);
 
 if (jonas[interestedIn]) {
   console.log(jonas[interestedIn]);
 } else {
-  console.log('Wrong request! Choose between firstName, lastName, age, job, and friends');
+  console.log(
+    "Wrong request! Choose between firstName, lastName, age, job, and friends"
+  );
 }
 
-jonas.location = 'Portugal';
-jonas['twitter'] = '@jonasschmedtman';
+jonas.location = "Portugal";
+jonas["twitter"] = "@jonasschmedtman";
 console.log(jonas);
 
 // Challenge
 // "Jonas has 3 friends, and his best friend is called Michael"
-console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
-
+console.log(
+  `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
+);
 
 ///////////////////////////////////////
 // Object Methods
 
 const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
   birthYeah: 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven'],
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
   hasDriversLicense: true,
 
   // calcAge: function (birthYeah) {
@@ -345,8 +347,10 @@ const jonas = {
   },
 
   getSummary: function () {
-    return `${this.firstName} is a ${this.calcAge()}-year old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
-  }
+    return `${this.firstName} is a ${this.calcAge()}-year old ${
+      jonas.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+  },
 };
 
 console.log(jonas.calcAge());
@@ -358,7 +362,6 @@ console.log(jonas.age);
 // Challenge
 // "Jonas is a 46-year old teacher, and he has a driver's license"
 console.log(jonas.getSummary());
-*/
 
 ///////////////////////////////////////
 // Coding Challenge #3
@@ -375,25 +378,24 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 GOOD LUCK 😀
 */
 
-/*
 const mark = {
-  fullName: 'Mark Miller',
+  fullName: "Mark Miller",
   mass: 78,
   height: 1.69,
   calcBMI: function () {
     this.bmi = this.mass / this.height ** 2;
     return this.bmi;
-  }
+  },
 };
 
 const john = {
-  fullName: 'John Smith',
+  fullName: "John Smith",
   mass: 92,
   height: 1.95,
   calcBMI: function () {
     this.bmi = this.mass / this.height ** 2;
     return this.bmi;
-  }
+  },
 };
 
 mark.calcBMI();
@@ -404,11 +406,14 @@ console.log(mark.bmi, john.bmi);
 // "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
 
 if (mark.bmi > john.bmi) {
-  console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`)
+  console.log(
+    `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`
+  );
 } else if (john.bmi > mark.bmi) {
-  console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`)
+  console.log(
+    `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`
+  );
 }
-
 
 ///////////////////////////////////////
 // Iteration: The for Loop
@@ -429,16 +434,15 @@ for (let rep = 1; rep <= 30; rep++) {
   console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
 
-
 ///////////////////////////////////////
 // Looping Arrays, Breaking and Continuing
 const jonas = [
-  'Jonas',
-  'Schmedtmann',
+  "Jonas",
+  "Schmedtmann",
   2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven'],
-  true
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  true,
 ];
 const types = [];
 
@@ -468,30 +472,29 @@ for (let i = 0; i < years.length; i++) {
 console.log(ages);
 
 // continue and break
-console.log('--- ONLY STRINGS ---')
+console.log("--- ONLY STRINGS ---");
 for (let i = 0; i < jonas.length; i++) {
-  if (typeof jonas[i] !== 'string') continue;
+  if (typeof jonas[i] !== "string") continue;
 
   console.log(jonas[i], typeof jonas[i]);
 }
 
-console.log('--- BREAK WITH NUMBER ---')
+console.log("--- BREAK WITH NUMBER ---");
 for (let i = 0; i < jonas.length; i++) {
-  if (typeof jonas[i] === 'number') break;
+  if (typeof jonas[i] === "number") break;
 
   console.log(jonas[i], typeof jonas[i]);
 }
-
 
 ///////////////////////////////////////
 // Looping Backwards and Loops in Loops
 const jonas = [
-  'Jonas',
-  'Schmedtmann',
+  "Jonas",
+  "Schmedtmann",
   2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven'],
-  true
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  true,
 ];
 
 // 0, 1, ..., 4
@@ -508,7 +511,6 @@ for (let exercise = 1; exercise < 4; exercise++) {
     console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♀️`);
   }
 }
-
 
 ///////////////////////////////////////
 // The while Loop
@@ -527,9 +529,8 @@ let dice = Math.trunc(Math.random() * 6) + 1;
 while (dice !== 6) {
   console.log(`You rolled a ${dice}`);
   dice = Math.trunc(Math.random() * 6) + 1;
-  if (dice === 6) console.log('Loop is about to end...');
+  if (dice === 6) console.log("Loop is about to end...");
 }
-*/
 
 ///////////////////////////////////////
 // Coding Challenge #4
