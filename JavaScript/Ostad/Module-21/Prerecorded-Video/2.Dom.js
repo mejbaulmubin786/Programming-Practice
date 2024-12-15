@@ -1,3 +1,20 @@
+//----------------------------------------------------------------------------------40 Introduction to DOM
+/*
+DOCUMENT OBJECT MODEL (DOM)
+
+When a web page is loaded, the browser creates a Document Object Model of the page. With the HTML DOM, JavaScript can access and change all the elements of an HTML document.   
+
+JavaScript can:
+
+Change all the HTML elements in the page
+Change all the HTML attributes in the page
+Change all the CSS styles in the page
+Remove existing HTML elements and attributes   
+Add new HTML elements and attributes
+React to all existing HTML events in the page
+Create new HTML events in the page
+*/
+
 //----------------------------------------------------------------------------------41 Finding Elements By DOM
 document.write(
   "<br>" + "<br>" + "<strong>41 Finding Elements By DOM</strong>" + "<br>"
