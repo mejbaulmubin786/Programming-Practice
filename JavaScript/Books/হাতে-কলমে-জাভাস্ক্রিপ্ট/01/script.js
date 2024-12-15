@@ -171,3 +171,17 @@ for (item in student) {
   console.log(student.item);
 }
 // --------------------------------------------------------------------------------------------Page-79
+console.log("-------------------function----------------");
+function changeValue(fun) {
+  console.log("Value of a inside function before changing: " + fun);
+  fun = 10;
+  console.log("Value of a inside function before changing: " + fun);
+}
+
+let fun = 100;
+
+console.log("Value of a before changing function is applied: " + fun);
+changeValue(fun);
+console.log("Value of a after changing function is applied: " + fun);
+// --------------------------------------------------------------------------------------------Page-89
+// --------------------------------------------------------------------------------------------Page-91
