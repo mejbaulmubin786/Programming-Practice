@@ -81,3 +81,24 @@ switch (Day) {
     console.log("Not a Day");
 }
 // --------------------------------------------------------------------------------------------Page-59
+//for loop
+for (let i = 0; i < 10; i++) {
+  console.log("Go " + i + " step");
+}
+
+//While loop
+let x = 8;
+while (x < 10) {
+  console.log("Inside the while Loop");
+  x++;
+}
+console.log("Outsite the while loop");
+
+//do-while loop
+let num = 8;
+do {
+  console.log("Inside the loop, num is: " + num);
+  num += 1;
+} while (num < 10);
+
+console.log("Outsite the loop");
