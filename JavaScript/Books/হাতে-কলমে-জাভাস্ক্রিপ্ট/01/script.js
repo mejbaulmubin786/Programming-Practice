@@ -184,4 +184,16 @@ console.log("Value of a before changing function is applied: " + fun);
 changeValue(fun);
 console.log("Value of a after changing function is applied: " + fun);
 // --------------------------------------------------------------------------------------------Page-89
-// --------------------------------------------------------------------------------------------Page-91
+// -------------------------------------------------------------------------------------------Page-103
+function aParentFunc(a) {
+  return function (b) {
+    console.log(`Sum: ${a + b}`);
+  };
+}
+
+aParentFunc(5)(5);
+
+(function aDemofunc() {
+  console.log("Mejbaul Mubin");
+})();
+// -------------------------------------------------------------------------------------------Page-103
