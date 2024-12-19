@@ -8,3 +8,10 @@ function helloThis() {
 }
 
 helloThis();
+
+function helloNewThis() {
+  "use strict";
+  console.log(this);
+}
+
+helloNewThis();
