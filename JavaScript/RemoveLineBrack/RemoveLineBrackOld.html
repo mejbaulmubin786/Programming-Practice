@@ -24,8 +24,7 @@
     </div>
     <div class="result" id="resultContainer" style="display: none">
       <h2>Resulting Text:</h2>
-      <textarea id="resultText" readonly></textarea><br />
-      <button type="button" id="copyButton">Copy Text</button>
+      <textarea id="resultText" readonly></textarea>
     </div>
     <footer>
       <p>
@@ -35,7 +34,7 @@
     </footer>
 
     <script>
-      // Handle the replace button click event
+      // Handle the button click event
       document
         .getElementById("replaceButton")
         .addEventListener("click", function () {
@@ -50,29 +49,6 @@
           const resultText = document.getElementById("resultText");
           resultText.value = replacedText;
           resultContainer.style.display = "block";
-        });
-
-      // Handle the copy button click event
-      document
-        .getElementById("copyButton")
-        .addEventListener("click", function () {
-          const resultText = document.getElementById("resultText");
-          resultText.select();
-          resultText.setSelectionRange(0, 99999); // For mobile devices
-
-          try {
-            const successful = document.execCommand("copy");
-            if (successful) {
-              alert("Text copied to clipboard!");
-            } else {
-              alert("Failed to copy text.");
-            }
-          } catch (err) {
-            alert("Browser does not support copying.");
-          }
-
-          // Deselect the text
-          window.getSelection().removeAllRanges();
         });
     </script>
   </body>
