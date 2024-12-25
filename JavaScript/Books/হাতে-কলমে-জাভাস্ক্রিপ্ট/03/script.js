@@ -66,3 +66,16 @@ const [name6, age6, nikname, fullname] = mubin;
 console.log(name6);
 console.log(age6);
 console.log(nikname);
+// -------------------------------------------------------------------------------------------Page-165
+var numbers = [1, 2, 3, 4];
+
+function calculate(a, b, c, d) {
+  console.log("Sum: " + (a + b + c + d));
+}
+
+calculate();
+
+calculate.apply(null, numbers);
+
+calculate(...numbers);
+console.log("----------------");
