@@ -1,47 +1,67 @@
 // -------------------------------------------------------------------------------------------Page-107
+//"use strict";
+document.write(this);
+document.write("<br>");
+document.write(this === window);
 
-// -------------------------------------------------------------------------------------------Page-107
-console.log(this);
-console.log(this === window);
+document.write("<br>");
+
 function helloThis() {
-  console.log(this);
+  document.write(this);
 }
 
 helloThis();
 
-function helloNewThis() {
+function helloThisSM() {
   "use strict";
-  console.log(this);
+  document.write(this);
 }
+document.write("<br>");
 
-helloNewThis();
-
-let myCustomObj = {
+helloThisSM();
+document.write("<br>");
+document.write("<br>");
+var myCustomObj = {
   name: "Mejbaul Mubin",
-  age: 36,
-  job: "Jovern Ment Job",
+  age: 35,
+  job: "Student",
   msg: function () {
+    document.write(this);
     console.log(this);
   },
 };
-
+document.write("--------------------------<br>");
 myCustomObj.msg();
-
-let myCustomObj2 = {
+document.write("<br>--------------------------<br>");
+document.write("<br>");
+var myCustomObj2 = {
   name: "Mejbaul Mubin",
-  age: 36,
-  job: "Jovern Ment Job",
+  age: 35,
+  job: "Student",
   anotherObj: {
-    name: "Mejbaul Mubin Ruble",
+    name: "Mejbaul Mubin (Rubel)",
+    age: 36,
+    job: "Student",
     msg: function () {
-      console.log("My name is: " + this.name);
-    },
-
-    value: function () {
-      console.log(this);
+      document.write("My name is : " + this.name);
+      console.log("My name is : " + this.name);
     },
   },
 };
 
 myCustomObj2.anotherObj.msg();
-myCustomObj2.anotherObj.value();
+
+var myCustomObj3 = {
+  name: "Mejbaul Mubin",
+  age: 35,
+  job: "Student",
+  msg: function () {
+    document.write(this);
+    console.log(this);
+  },
+};
+
+document.write("<br>");
+myCustomObj3.msg();
+
+// -------------------------------------------------------------------------------------------Page-111

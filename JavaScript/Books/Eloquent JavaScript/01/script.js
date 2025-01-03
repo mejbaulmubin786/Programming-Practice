@@ -1,6 +1,38 @@
 // --------------------------------------------------------------------------------------------Page-21
+/*
+console.log("5" - 1);
+console.log("5" + 1);
+console.log(null || "Mejbaul Mubin");
+console.log("Mejbaul" || "Mubin");
+console.log(0 ?? 100);
+console.log(null ?? 100);
+console.log(null ?? undefined);
 
+let theNumber = Number(prompt("Pic a number"));
+console.log("Your number is the square root of" + theNumber * theNumber);
+theNumber = Number(prompt("Pic a number"));
+if (!Number.isNaN(theNumber)) {
+  console.log("Your Number is the square root of" + theNumber * theNumber);
+}
+
+let num = Number(prompt("Pic a number"));
+if (num < 10) {
+  console.log("Small");
+} else if (num < 100) {
+  console.log("Medium");
+} else {
+  console.log("Large");
+}
 // --------------------------------------------------------------------------------------------Page-36
+*/
+let n = prompt("Enter a number: ");
+
+for (i = 0; i < n; i++) {
+  for (j = 0; j <= i; j++) {
+    document.write("a");
+  }
+  document.write("<br>");
+}
 
 // --------------------------------------------------------------------------------------------Page-49
 
