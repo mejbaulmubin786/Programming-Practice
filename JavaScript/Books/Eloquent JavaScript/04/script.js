@@ -1,44 +1,33 @@
-// --------------------------------------------------------------------------------------------Page-38
+// --------------------------------------------------------------------------------------------Page-56
 /*
-console.log("5" - 1);
-console.log("5" + 1);
-console.log(null || "Mejbaul Mubin");
-console.log("Mejbaul" || "Mubin");
-console.log(0 ?? 100);
-console.log(null ?? 100);
-console.log(null ?? undefined);
+let listOfNumbers = [2, 3, 5, 7, 11];
+document.write(listOfNumbers[2]);
+document.write("<br>");
+document.write(listOfNumbers[0]);
+document.write("<br>");
+document.write(listOfNumbers[2 - 1]);
+document.write("<br>");
+let doh = "Doh";
+document.write(typeof doh.toUpperCase);
+document.write("<br>");
+document.write(doh.toUpperCase());
 
-let theNumber = Number(prompt("Pic a number"));
-console.log("Your number is the square root of" + theNumber * theNumber);
-theNumber = Number(prompt("Pic a number"));
-if (!Number.isNaN(theNumber)) {
-  console.log("Your Number is the square root of" + theNumber * theNumber);
-}
-
-let num = Number(prompt("Pic a number"));
-if (num < 10) {
-  console.log("Small");
-} else if (num < 100) {
-  console.log("Medium");
-} else {
-  console.log("Large");
-}
+let sequence = [1, 2, 3];
+sequence.push(4);
+document.write("<br>");
+document.write(sequence);
+document.write("<br>");
+document.write(sequence.pop());
 */
-// --------------------------------------------------------------------------------------------Page-36
+// --------------------------------------------------------------------------------------------Page-58
+let day1 = {
+  squirrel: false,
+  events: ["work", "touched tree", "pizza", "running"],
+};
 
 // --------------------------------------------------------------------------------------------Page-49
 
 // --------------------------------------------------------------------------------------------Page-53
-
-function mmin(x, y) {
-  if (x < y) {
-    return x;
-  } else {
-    return y;
-  }
-}
-
-document.write(mmin(10, 9));
 
 // --------------------------------------------------------------------------------------------Page-59
 
