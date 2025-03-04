@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container h1 {
+  font-size: 50px;
+}
+.container p {
+  font-size: 20px;
+  /* line-height: 0; */
+}
+nav .container div:nth-child(2),
+nav .container div:last-child {
+  display: flex; /* ডিভগুলোকে ফ্লেক্স কন্টেইনারে পরিণত করুন */
+  flex-direction: column; /* কনটেন্টগুলো কলাম আকারে সাজান */
+  align-items: flex-start; /* কনটেন্টগুলো বাম দিকে সারিবদ্ধ করুন */
+}
