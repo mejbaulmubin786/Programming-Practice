@@ -5,7 +5,15 @@ document.write("<br>");
 document.write(myName);
 document.write("<br>");
 document.writeln(typeof myName);
-
+document.write("<br>");
+let a;
+document.writeln(a);
+document.write("<br>");
+let someThing = null;
+document.writeln(someThing);
+document.write("<br>");
+let author = myName;
+document.writeln(author);
 // --------------------------------------------------------------------------------------------Page-32
 
 // --------------------------------------------------------------------------------------------Page-49
