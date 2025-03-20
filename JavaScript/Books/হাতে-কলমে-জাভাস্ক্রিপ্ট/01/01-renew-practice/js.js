@@ -1,3 +1,30 @@
+// ------------------------------------------Page-21
+console.log("Hello World!");
+//console.log(a);
+console.log("Hello World from Inside!");
+
+//consle.log("Wrong!");
+//clear(); write in console to clear console
+// ------------------------------------------Page-24
+let $text = "I am Valid";
+console.log($text);
+let my_name = "Mejbaul Mubin";
+
+// ------------------------------------------Page-24
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // --------------------------------------------------------------------------------------------Page-21
 document.write("Mejbaul Mubin");
 let myName = "Mejbaul Mubin";
