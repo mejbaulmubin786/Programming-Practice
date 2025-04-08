@@ -4,3 +4,9 @@ let c = parseInt(a);
 let d = parseInt(b);
 
 document.write(`${c} + ${d} = ${c + d}`);
+document.write("<br>");
+document.write(`${c} - ${d} = ${c - d}`);
+document.write("<br>");
+document.write(`${c} * ${d} = ${c * d}`);
+document.write("<br>");
+document.write(`${c} / ${d} = ${c / d}`);
